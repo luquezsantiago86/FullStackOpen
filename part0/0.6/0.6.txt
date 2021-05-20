@@ -1,0 +1,15 @@
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note over browser:
+SPA does not reload
+the whole page
+end note
+
+note over browser:
+Push Note to NOTES list.
+Redraw Notes
+Send NOTE to server
+end note
+browser->server: HTTP POST new_note_spa
